@@ -1,5 +1,48 @@
 # Primeiros Códigos em python usando o colab.
 
+# Perguntando ao código meu nome e contatenando os 2 nomes
 def saudacao():
   nome = input('Qual seu Nome ?')
-  print(f' Olá {nome} seja muito bem vindo' )
+  sobre_nome = input('Qual seu sobre nome ?')
+  nome_inteiro = nome + ' ' + sobre_nome
+  print(f' Olá {nome_inteiro} seja muito bem vindo')
+
+# teste se a pessoa pode ou não dirigir ( sem parametro
+
+def verifica_se_pode_dirigir():
+  idade = input('Quantos anos vc tem ?')
+  idade = int(idade)
+  if idade >= 18:
+    print(f' vc pode dirigir')
+  else:
+    print(f' vc ñ pode dirigir')
+    
+  verifica_se_pode_dirigir()
+  
+  
+# Teste se pode dirigir com parametro / for fora da função
+idades = [18,10,25,17]
+
+def verifica_se_pode_dirigir(idade):
+
+  if idade >= 18:
+    print(f' vc pode dirigir')
+  else:
+   print(f' vc ñ pode dirigir')
+
+for idade in idades:
+  verifica_se_pode_dirigir(idade)
+  
+  
+ # Booleano , for dentro da função
+ 
+ def verifica_se_pode_dirigir(idades, permissoes):
+  for idade in idades:
+    if idade >= 18:
+      permissoes.append(True)
+    else:
+      permissoes>append(False)
+ verifica_se_pode_dirigir(idades, permissoes)
+
+      
+  
