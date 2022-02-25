@@ -1,0 +1,5 @@
+# Primeiros Códigos em python usando o colab.
+
+def saudacao():
+  nome = input('Qual seu Nome ?')
+  print(f' Olá {nome} seja muito bem vindo' )
